@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:wght@500;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+:root {
+    --DesaturatedRed: hsl(0, 36%, 70%);
+    --SoftRed: hsl(0, 93%, 68%);
+    --DarkGrayishRed: hsl(0, 6%, 24%);
+
+    --color: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    --anotherColor: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+--vatha: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%),135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+}
+
+body {
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+
+
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+
+
+
+}
+
+.leftSide {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ 
+
+ padding: 2rem 0 0 4rem;
+ width: 60%;
+
+}
+
+.rightSide {
+    width: 40%;
+    height: 100%;
+    
+}
+.rightSide img {
+    width: 100%;
+    height: 100%;
+}
+.logImage {
+    
+    margin-bottom: 6rem;
+}
+
+.logImage img {
+    width: 150px;
+}
+
+.heading {
+    text-transform: uppercase;
+    font-size: x-large;
+    letter-spacing: 10px;
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+
+.heading span {
+    font-style: normal;
+    font-weight: 200;
+    color: var(--DesaturatedRed);
+}
+
+.heading h1 {
+    color: var(--DarkGrayishRed);
+}
+
+.displayMessage {
+    color: var(--DesaturatedRed);
+    line-height: 1.5;
+    padding: 0;
+    margin-bottom: 2rem;
+    width: 54%
+    
+    
+}
+
+form {
+    display: flex;
+  
+    align-items: center;
+
+}
+
+form input {
+    padding: 20px;
+    width: 100%;
+    border-radius: 60px;
+    border: 1px solid var(--DesaturatedRed);
+    outline: none;
+    color: var(--DesaturatedRed);
+
+}
+
+form input::placeholder {
+    color: var(--anotherColor);
+    font-family: "Josefin Sans";
+}
+
+form button {
+    background-color: var(--DesaturatedRed);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 55px;
+    border-radius: 60px;
+    border: 0px;
+    cursor: pointer;
+
+}
+button:hover {
+    background-color: var(--DarkGrayishRed);
+}
+
+.contentOfForm {
+    position: relative;
+    width: 55%;
+}
+.contentOfForm .errordiv{
+    position: absolute;
+    left: 280px;
+}
+.contentOfForm button{
+    position: absolute;
+left: 360px;
+
+}
+
+.hide{
+    display: none;
+}
